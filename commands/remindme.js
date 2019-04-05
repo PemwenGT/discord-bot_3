@@ -32,7 +32,7 @@ exports.run = async (client, message, args) => {
             .addField('Reminder', `\`\`\`${reminder}\`\`\``)
             .setTimestamp()
 
-            message.channel.send(remindEmbed);
+            message.reply(remindEmbed);
     }, ms(reminderTime));
 
 } 
